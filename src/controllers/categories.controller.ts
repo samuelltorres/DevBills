@@ -1,4 +1,5 @@
 import { Request, Response } from 'express';
+
 import { CategoriesService } from '../services/categories.service';
 
 export class CategoriesController {

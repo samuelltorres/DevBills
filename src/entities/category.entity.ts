@@ -15,8 +15,3 @@ export class Category {
     this.color = color.toUpperCase();
   }
 }
-
-const shoppingCategory = new Category({
-  title: 'title',
-  color: '#ff33bb',
-});
