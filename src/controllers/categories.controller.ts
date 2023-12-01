@@ -2,8 +2,8 @@ import { Request, Response } from 'express';
 
 import { CategoriesRepository } from '../database/repositories/categories.repository';
 import { CategoryModel } from '../database/schemas/category.schema';
-import { CategoriesService } from '../services/categories.service';
 import { CreateCategoryDTO } from '../dtos/categories.dto';
+import { CategoriesService } from '../services/categories.service';
 
 export class CategoriesController {
   async create(
