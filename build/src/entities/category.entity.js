@@ -9,7 +9,3 @@ class Category {
     }
 }
 exports.Category = Category;
-const shoppingCategory = new Category({
-    title: 'title',
-    color: '#ff33bb',
-});

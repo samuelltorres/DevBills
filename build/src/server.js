@@ -24,8 +24,12 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importStar(require("express"));
+require("dotenv/config");
+const database_1 = require("./database");
 const routes_1 = require("./routes");
-const app = (0, express_1.default)();
-app.use((0, express_1.json)());
-app.use(routes_1.routes);
-app.listen(3333, () => console.log('🚀 App is running at port 3333!'));
+(0, database_1.setupMongo)().then(() => {
+    const app = (0, express_1.default)();
+    app.use((0, express_1.json)());
+    app.use(routes_1.routes);
+    app.listen(3333, () => console.log('🚀 App is running at port 3333!'));
+});
