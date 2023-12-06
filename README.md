@@ -34,6 +34,9 @@
     - TypeScript
     - Express
     - MongoDB
+    - Mongoose
+    - HTTPStatusCode
+    - Zod
 
 quando ta chamando rota na api: ROUTE -> CONTROLLER -> SERVICE -> ENTITY
 
