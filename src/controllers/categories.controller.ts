@@ -1,11 +1,11 @@
 import { NextFunction, Request, Response } from 'express';
+import { StatusCodes } from 'http-status-codes';
 import { z } from 'zod';
 
 import { CategoriesRepository } from '../database/repositories/categories.repository';
 import { CategoryModel } from '../database/schemas/category.schema';
 import { CreateCategoryDTO } from '../dtos/categories.dto';
 import { CategoriesService } from '../services/categories.service';
-import { StatusCodes } from 'http-status-codes';
 
 export class CategoriesController {
   async create(
