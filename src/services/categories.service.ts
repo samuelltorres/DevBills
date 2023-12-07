@@ -23,4 +23,10 @@ export class CategoriesService {
     const createdCategory = await this.categoriesRepository.create(category);
     return createdCategory;
   }
+
+  async index(): Promise<Category[]> {
+    const categories = await this.categoriesRepository.index();
+
+    return categories;
+  }
 }

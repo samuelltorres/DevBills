@@ -20,7 +20,7 @@
 
     - por ano
 
-## Criar categorias
+## Criar categorias [ DONE ✅]
 
     - nome, cor
     - não é possivel criar categoria com o mesmo nome
