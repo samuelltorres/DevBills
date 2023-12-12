@@ -1,12 +1,21 @@
 # Funçoes backend
 
+## Criar categorias [ DONE ✅]
+
+    - nome, cor
+    - não é possivel criar categoria com o mesmo nome
+
+## Listar as categorias [ DONE ✅]
+
+## Criar transaçoes
+
+    - id categoria, nome, valor, data e tipo
+
 ## Listar as transaçoes com filtros
 
     - por nome
     - por período (inicio e fim)
     - por categoria
-
-## Listar as categorias
 
 ## Dados de saldo com filtros
 
@@ -19,15 +28,6 @@
 ## Dados de balanço com filtros
 
     - por ano
-
-## Criar categorias [ DONE ✅]
-
-    - nome, cor
-    - não é possivel criar categoria com o mesmo nome
-
-## Criar transaçoes
-
-    - categoria, nome, valor, data e tipo
 
 # Tecnologias utilizadas
 
