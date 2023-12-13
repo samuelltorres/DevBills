@@ -11,7 +11,7 @@
 
     - id categoria, nome, valor, data e tipo
 
-## Listar as transaçoes com filtros
+## Listar as transaçoes com filtros [ DONE ✅]
 
     - por nome
     - por período (inicio e fim)
