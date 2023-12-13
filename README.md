@@ -7,7 +7,7 @@
 
 ## Listar as categorias [ DONE ✅]
 
-## Criar transaçoes
+## Criar transaçoes [ DONE ✅]
 
     - id categoria, nome, valor, data e tipo
 
