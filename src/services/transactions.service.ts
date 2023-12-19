@@ -7,10 +7,10 @@ import {
   GetDashBoardDTO,
   IndexTransactionsDTO,
 } from '../dtos/transactions.dto';
-import { Transaction } from '../entities/transactions.entity';
-import { AppError } from '../errors/app.error';
 import { Balance } from '../entities/balance.entity';
 import { Expense } from '../entities/expense.entity';
+import { Transaction } from '../entities/transactions.entity';
+import { AppError } from '../errors/app.error';
 
 export class TransactionsService {
   constructor(
