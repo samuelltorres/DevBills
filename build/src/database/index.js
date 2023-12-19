@@ -14,8 +14,8 @@ async function setupMongo() {
         await mongoose_1.default.connect(process.env.MONGO_URL);
         console.log('✅ DB Connected!');
     }
-    catch {
-        throw new Error('❌ DB not connected.');
+    catch (err) {
+        throw new Error(`❌ DB not connected.  -  ${err}`);
     }
 }
 exports.setupMongo = setupMongo;

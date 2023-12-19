@@ -8,12 +8,14 @@ import {
   IndexTransactionsDTO,
 } from '../dtos/transactions.dto';
 import { TransactionsService } from '../services/transactions.service';
+import { BodyRequest, QueryRequest } from './types';
+import { Query } from 'mongoose';
 
 export class TransactionsController {
   constructor(private transactionsService: TransactionsService) {}
 
   create = async (
-    req: Request<unknown, unknown, CreateTransactionDTO>,
+    req: BodyRequest<CreateTransactionDTO>,
     res: Response,
     next: NextFunction,
   ) => {
@@ -35,7 +37,7 @@ export class TransactionsController {
   };
 
   index = async (
-    req: Request<unknown, unknown, unknown, IndexTransactionsDTO>,
+    req: QueryRequest<IndexTransactionsDTO>,
     res: Response,
     next: NextFunction,
   ) => {
@@ -56,7 +58,7 @@ export class TransactionsController {
   };
 
   getDashboard = async (
-    req: Request<unknown, unknown, unknown, GetDashBoardDTO>,
+    req: QueryRequest<GetDashBoardDTO>,
     res: Response,
     next: NextFunction,
   ) => {
@@ -75,7 +77,7 @@ export class TransactionsController {
   };
 
   getFinancialEvolution = async (
-    req: Request<unknown, unknown, unknown, GetFinancialEvolutionDTO>,
+    req: QueryRequest<GetFinancialEvolutionDTO>,
     res: Response,
     next: NextFunction,
   ) => {
